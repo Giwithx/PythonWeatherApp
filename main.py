@@ -259,6 +259,7 @@ class WeatherApp(QWidget):
         self.day2_name.clear()
         self.day3_name.clear()
         self.date_today.clear()
+        self.feels_like_label.clear()
 
     def display_weather(self, data, forecast_data):
         self.temperature_label.setStyleSheet("font-size: 75px;") # Back the font size to original
