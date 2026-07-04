@@ -208,7 +208,7 @@ class WeatherApp(QWidget):
 
         self.temperature_label.setText(f"{temperature_c:.0f}°C") # This will display the data in the weather app
         self.emoji_label.setText(self.get_weather_emoji(weather_id))
-        self.description_label.setText(weather_description)
+        self.description_label.setText(weather_description.upper())
 
         self.day_title.setText("3 Day Weather Forecast")
 
