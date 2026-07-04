@@ -32,7 +32,7 @@ class WeatherApp(QWidget):
         self.day2_description_label = QLabel(self)
         self.day3_description_label = QLabel(self)
         self.feels_like_label = QLabel(self)
-        self.setWindowIcon(QIcon("weather.png"))
+        self.setWindowIcon(QIcon("icons/weather.png"))
         self.get_weather_button.setFocus()
         self.initUI()
 
@@ -339,17 +339,17 @@ class WeatherApp(QWidget):
 
     @staticmethod # belong to a class but not require an instance or any other method
     def get_weather_emoji(weather_id):
-        clouds = QPixmap("clouds.png").scaled(64,64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
-        fog = QPixmap("fog.png").scaled(64,64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
-        heavy_rain = QPixmap("heavy-rain.png").scaled(64,64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
-        tornado = QPixmap("hurricane.png").scaled(64,64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
-        light_rain = QPixmap("light-rain.png").scaled(64,64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
-        snow = QPixmap("snowflake.png").scaled(64,64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
-        thunder = QPixmap("thunder.png").scaled(64,64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
-        windy = QPixmap("windy.png").scaled(64,64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
-        volcano = QPixmap("volcano.png").scaled(64,64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
-        sunny = QPixmap("sun.png").scaled(64,64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
-        none = QPixmap("forbidden.png").scaled(64,64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        clouds = QPixmap("icons/clouds.png").scaled(64, 64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        fog = QPixmap("icons/fog.png").scaled(64, 64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        heavy_rain = QPixmap("icons/heavy-rain.png").scaled(64, 64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        tornado = QPixmap("icons/hurricane.png").scaled(64, 64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        light_rain = QPixmap("icons/light-rain.png").scaled(64, 64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        snow = QPixmap("icons/snowflake.png").scaled(64, 64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        thunder = QPixmap("icons/thunder.png").scaled(64, 64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        windy = QPixmap("icons/windy.png").scaled(64, 64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        volcano = QPixmap("icons/volcano.png").scaled(64, 64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        sunny = QPixmap("icons/sun.png").scaled(64, 64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        none = QPixmap("icons/forbidden.png").scaled(64, 64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
 
         if 200 <= weather_id <= 232:
             return thunder
