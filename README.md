@@ -10,7 +10,7 @@ A modern desktop weather application built with **Python** and **PyQt5** that pr
 
 ## 📸 Screenshot
 
-> ![img_1.png](img_1.png)
+> ![img_1.png](screenshots/img_1.png)
 
 ```
 screenshots/weather_app.png
